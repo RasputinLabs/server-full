@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  lemp:
+    build: .
+    ports:
+      - 8082:80
+    networks:
+      - app
+
+networks:
+  app:
+    driver: bridge
